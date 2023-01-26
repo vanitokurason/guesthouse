@@ -44,6 +44,7 @@ class Router
             }
           }
       } else {
+        http_response_code(404);
         echo "Ошибка в конфигурационном файле routes.php";
           die();
       }
@@ -52,6 +53,7 @@ class Router
     if (isset($this->controller) && isset($this->action) && isset($this->controllerNamespace)) {
       return new Track($this->controllerNamespace, $this->controller, $this->action, $this->params);
     } else {
+      http_response_code(404);
       echo "404: Страница не найдена!";
       die();
     }
@@ -62,7 +64,7 @@ class Router
 			return '#^' . preg_replace('#/:([^/]+)#', '/(?<$1>[^/]+)', $path) . '/?$#';
 		}
 		
-  private function clearParams($params)
+  private function clearParams($params): array
   {
     $result = [];
 
