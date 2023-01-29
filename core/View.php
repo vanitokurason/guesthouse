@@ -25,7 +25,6 @@ class View
             $viewPath = __DIR__ . "/../app/Views/{$page->view}.php";
 
             if (file_exists($viewPath)) {
-                echo 32;
                 ob_start();
                 $content = $page->content;
                 require $viewPath;

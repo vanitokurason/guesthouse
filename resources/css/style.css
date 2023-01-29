@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/giphyBig.gif");
+    background-image: url("../images/giphy.gif");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -15,8 +15,9 @@ header, footer, section {
 }
 
 header {
+    color: white;
     padding: 2em 1em 1em 1em;
-    text-shadow: 3px 3px 3px white;
+    text-shadow: 3px 3px 3px red;
 }
 
 h1 {
@@ -114,21 +115,19 @@ footer a {
     color: white;
 }
 
-/*hr.style1 {*/
-/*    margin-left: 33%;*/
-/*    width:67%;*/
-/*    color: red;*/
-/*    border: 1px solid red;*/
-/*}*/
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
+th, td {
+    border: 1px solid black;
+}
+th {
+    text-align: center;
+}
 
-
-/*hr.style2 {*/
-/*    border: 0;*/
-/*    height: 1px;*/
-/*    background-image: -webkit-linear-gradient(left, red, white, red);*/
-/*    background-image: -moz-linear-gradient(left, red, white, red);*/
-/*    background-image: -ms-linear-gradient(left, red, white, red);*/
-/*    background-image: -o-linear-gradient(left, red, white, red);*/
-/*}*/
-
+button {
+    margin: 10px 0px;
+}

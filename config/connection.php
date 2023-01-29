@@ -1,5 +1,6 @@
 <?php
-const DB_USER = 'Kurason';
-const DB_PASS = 'Kiparis_88';
-const DB_NAME = 'Neo_test';
-const DB_CHARSET = 'utf-8';
+const DB_HOST = 'your_host';
+const DB_USER = 'User_name';
+const DB_PASS = 'Password';
+const DB_NAME = 'database_name';
+const DB_CHARSET = 'UTF-8';
